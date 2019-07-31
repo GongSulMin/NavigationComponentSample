@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/splash_fragment"
+        >
+
+    <fragment
+            android:id="@+id/splash_fragment"
+            android:name="gong.team.navigationcomponentsample.ui.splash.SplashFragment"
+            android:label="Splash"
+            tools:layout="@layout/fragmet_splash"
+            >
+        <action
+                android:id="@+id/action_splash_fragment_to_main_fragment"
+                app:destination="@id/main_fragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/main_fragment"
+            android:name="gong.team.navigationcomponentsample.ui.main.MainFragment"
+            android:label="Main"
+            tools:layout="@layout/fragment_main">
+        <action
+                android:id="@+id/action_main_fragment_to_detail_fragment"
+                app:destination="@id/detail_fragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/detail_fragment"
+            android:name="gong.team.navigationcomponentsample.ui.detail.DetailFragment"
+            android:label="Detail"
+            tools:layout="@layout/fragment_detail"/>
+
+    <action
+            android:id="@+id/action_global_test"
+            app:destination="@id/main_fragment"/>
+
+</navigation>
