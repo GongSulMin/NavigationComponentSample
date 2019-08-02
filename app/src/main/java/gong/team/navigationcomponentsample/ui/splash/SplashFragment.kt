@@ -39,6 +39,10 @@ class SplashFragment
         super.onStop()
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+    }
+    
     override fun onDestroy() {
         super.onDestroy()
     }
