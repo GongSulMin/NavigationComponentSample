@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nav_bottom"
+            app:startDestination="@id/fragmentFirst">
+
+    <fragment
+            android:id="@+id/fragmentFirst"
+            android:name="gong.team.navigationcomponentsample.ui.bottom.FragmentFirst"
+            android:label="FragmentFirst"/>
+    <fragment
+            android:id="@+id/fragmentSecond"
+            android:name="gong.team.navigationcomponentsample.ui.bottom.FragmentSecond"
+            android:label="FragmentSecond"/>
+</navigation>

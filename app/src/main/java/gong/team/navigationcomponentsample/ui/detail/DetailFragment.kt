@@ -31,9 +31,8 @@ class DetailFragment
 
         btn_to_main_back_navigateup.setOnClickListener {
             // 이전 화면
-//            findNavController().navigateUp()
-
-            findNavController().navigate(R.id.action_to_main)
+            findNavController().navigateUp()
+//            findNavController().navigate(R.id.action_to_main)
         }
 
         btn_to_main_back_popbackstack.setOnClickListener {
@@ -41,7 +40,8 @@ class DetailFragment
         }
 
         btn_to_specific_destination.setOnClickListener {
-            findNavController().popBackStack(R.id.splash_fragment , false)
+            // true 하면 spalsh 화면으로감 ??
+            findNavController().popBackStack(R.id.main_fragment , true)
         }
     }
 

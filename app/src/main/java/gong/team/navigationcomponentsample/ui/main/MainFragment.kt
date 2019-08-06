@@ -40,4 +40,26 @@ class MainFragment
 
         }
     }
+
+    override fun onPause() {
+        super.onPause()
+    }
+
+    override fun onStop() {
+        super.onStop()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+    }
+
+
 }
