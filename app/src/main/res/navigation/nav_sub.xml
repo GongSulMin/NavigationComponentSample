@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nav_sub"
+            app:startDestination="@id/subFirstFragment">
+
+    <fragment
+            android:id="@+id/subFirstFragment"
+            android:name="gong.team.navigationcomponentsample.ui.subgraph.SubFirstFragment"
+            android:label="SubFirstFragment"/>
+    <fragment
+            android:id="@+id/subNavHostFragment2"
+            android:name="gong.team.navigationcomponentsample.ui.subgraph.SubNavHostFragment"
+            android:label="SubNavHostFragment">
+        <action
+                android:id="@+id/action_subNavHostFragment2_to_subFirstFragment"
+                app:destination="@id/subFirstFragment"/>
+    </fragment>
+
+</navigation>

@@ -28,6 +28,10 @@ class SplashFragment
             NavHostFragment.findNavController(this)
             findNavController().navigate(R.id.action_splash_fragment_to_main_fragment)
         }
+
+        btn_to_sub_host_fragment.setOnClickListener {
+            findNavController().navigate(R.id.action_splash_fragment_to_subNavHostFragment)
+        }
     }
 
     override fun onPause() {

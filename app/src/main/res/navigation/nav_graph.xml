@@ -5,8 +5,7 @@
             android:id="@+id/nav_graph"
             app:startDestination="@id/splash_fragment"
         >
-
-
+    
     <fragment
             android:id="@+id/splash_fragment"
             android:name="gong.team.navigationcomponentsample.ui.splash.SplashFragment"
@@ -15,7 +14,15 @@
             >
         <action
                 android:id="@+id/action_splash_fragment_to_main_fragment"
-                app:destination="@id/main_fragment"/>
+                app:destination="@id/main_fragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                />
+        <action
+                android:id="@+id/action_splash_fragment_to_subNavHostFragment"
+                app:destination="@id/subNavHostFragment"/>
     </fragment>
 
     <fragment
@@ -25,7 +32,12 @@
             >
         <action
                 android:id="@+id/action_main_fragment_to_detail_fragment"
-                app:destination="@id/detail_fragment">
+                app:destination="@id/detail_fragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                >
 
         </action>
     </fragment>
@@ -39,6 +51,10 @@
                 android:name="name"
                 app:argType="string"
                 android:defaultValue="default"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
                 />
     </fragment>
 
@@ -52,5 +68,9 @@
             android:id="@+id/bottomMainActivity"
             android:name="gong.team.navigationcomponentsample.BottomMainActivity"
             android:label="BottomMainActivity"/>
+    <fragment
+            android:id="@+id/subNavHostFragment"
+            android:name="gong.team.navigationcomponentsample.ui.subgraph.SubNavHostFragment"
+            android:label="SubNavHostFragment"/>
 
 </navigation>
